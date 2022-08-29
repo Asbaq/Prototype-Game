@@ -13,12 +13,12 @@ public class Player : MonoBehaviour
     {
         rb.AddForce(0, 0, forwardforces * Time.deltaTime);
 
-        if(Input.GetKey("d"))
+        if(Input.GetKey("right"))
         {
             rb.AddForce( sideways * Time.deltaTime, 0, 0, ForceMode.VelocityChange);
         }
 
-        if(Input.GetKey("a"))
+        if(Input.GetKey("left"))
         {
             rb.AddForce(-sideways * Time.deltaTime, 0, 0, ForceMode.VelocityChange);
         }

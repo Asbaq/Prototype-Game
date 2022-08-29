@@ -10,7 +10,7 @@ public class Level_2_UI : MonoBehaviour
     {
         x += Time.deltaTime;
 
-        if(x > 7f)
+        if(x > 3f)
         {
         SceneManager.LoadScene("Level_3");
         }   
